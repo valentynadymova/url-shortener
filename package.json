@@ -1,0 +1,38 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=production node ./server.js",
+    "start:dev": "cross-env NODE_ENV=development nodemon ./server.js",
+    "lint": "eslint **/*.js",
+    "lint:fix": "eslint --fix **/*.js",
+    "create_fake_users": "node ./createRandomUsers.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valentynadymova/url-shortener.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valentynadymova/url-shortener/issues"
+  },
+  "homepage": "https://github.com/valentynadymova/url-shortener#readme",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0",
+    "node-fetch": "^3.3.0",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "nodemon": "^2.0.20"
+  }
+}
